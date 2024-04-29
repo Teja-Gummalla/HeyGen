@@ -25,7 +25,7 @@ def get_status(request_count=0):
     """
     Queries the translation server to fetch the status
     of the ongoing video translation
-    Response(Dict):
+    Response(StatusResponse):
     - status: (string) one of the following status values: pending, error, completed
     - retry_seconds: (float) number of seconds to retry the request in, if status is pending
     - request_count: (int) the current request count, used to decided the suggested backoff
